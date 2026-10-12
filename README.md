@@ -1,6 +1,6 @@
 # My QuizDock quizzes and themes
 
-Quizzes and quiz themes made with [QuizDock](https://github.com/quizdock/quiz-dock), shared through the QuizDock community store.
+Quizzes and quiz themes made with [QuizDock](https://github.com/quizdock/quizdock), shared through the QuizDock community store.
 
 ## Publish a quiz
 
