@@ -1,11 +1,11 @@
-# Publishes the quizzes of this repository for the QuizDock community store.
-# Nothing to change here: upload .quizdock.zip files into quizzes/, this does the rest.
-name: Publish quizzes
+# Publishes the quizzes and themes of this repository for the QuizDock community store.
+# Nothing to change here: upload unzipped exports into quizzes/ or themes/, this does the rest.
+name: Publish
 
 on:
   push:
     branches: [main]
-    paths: ['quizzes/**', '.github/workflows/publish.yml']
+    paths: ['quizzes/**', 'themes/**', '.github/workflows/publish.yml']
   workflow_dispatch:
 
 permissions:
@@ -20,4 +20,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: quizdock/quiz-store/publish-action@v1
+      - uses: quizdock/quizdock-store/publish-action@main
